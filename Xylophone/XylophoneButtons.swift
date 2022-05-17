@@ -7,8 +7,8 @@
 
 import UIKit
 
-class XylophoneButtons: UIView {
- 
+final class XylophoneButtons: UIView {
+    
     private lazy var background: UIView = {
         let background = UIView()
         background.backgroundColor = .white
@@ -27,10 +27,13 @@ class XylophoneButtons: UIView {
     // MARK: - cButton
     
     private lazy var cButton: UIButton = {
-        let cButton = UIButton()
+        let cButton = UIButton(type: .system)
         cButton.backgroundColor = .red
         cButton.setTitle("C", for: .normal)
+        cButton.titleLabel?.font = .systemFont(ofSize: 40)
         cButton.setTitleColor(.white, for: .normal)
+        cButton.addTarget(self, action: #selector(cButtonA), for: .touchUpInside)
+        cButton.tag = 1
         cButton.translatesAutoresizingMaskIntoConstraints = false
         return cButton
     }()
@@ -42,14 +45,21 @@ class XylophoneButtons: UIView {
         cButton.heightAnchor.constraint(equalToConstant: 105).isActive = true
     }
     
+    @objc func cButtonA() {
+        let cAction = XylophoneViewController()
+        cAction.cButtonAction()
+    }
+    
     
     // MARK: - dButton
     
     private lazy var dButton: UIButton = {
-        let dButton = UIButton()
+        let dButton = UIButton(type: .system)
         dButton.backgroundColor = .orange
         dButton.setTitle("D", for: .normal)
+        dButton.titleLabel?.font = .systemFont(ofSize: 40)
         dButton.setTitleColor(.white, for: .normal)
+        dButton.addTarget(self, action: #selector(dButtonA), for: .touchUpInside)
         dButton.translatesAutoresizingMaskIntoConstraints = false
         return dButton
     }()
@@ -61,13 +71,20 @@ class XylophoneButtons: UIView {
         dButton.heightAnchor.constraint(equalToConstant: 105).isActive = true
     }
     
+    @objc func dButtonA() {
+        let dAction = XylophoneViewController()
+        dAction.dButtonAction()
+    }
+    
     // MARK: - eButton
     
     private lazy var eButton: UIButton = {
-        let eButton = UIButton()
+        let eButton = UIButton(type: .system)
         eButton.backgroundColor = .systemYellow
         eButton.setTitle("E", for: .normal)
+        eButton.titleLabel?.font = .systemFont(ofSize: 40)
         eButton.setTitleColor(.white, for: .normal)
+        eButton.addTarget(self, action: #selector(eButtonA), for: .touchUpInside)
         eButton.translatesAutoresizingMaskIntoConstraints = false
         return eButton
     }()
@@ -79,13 +96,20 @@ class XylophoneButtons: UIView {
         eButton.heightAnchor.constraint(equalToConstant: 105).isActive = true
     }
     
+    @objc func eButtonA() {
+        let eAction = XylophoneViewController()
+        eAction.eButtonAction()
+    }
+    
     // MARK: - fButton
     
     private lazy var fButton: UIButton = {
-        let fButton = UIButton()
+        let fButton = UIButton(type: .system)
         fButton.backgroundColor = .systemGreen
         fButton.setTitle("F", for: .normal)
+        fButton.titleLabel?.font = .systemFont(ofSize: 40)
         fButton.setTitleColor(.white, for: .normal)
+        fButton.addTarget(self, action: #selector(fButtonA), for: .touchUpInside)
         fButton.translatesAutoresizingMaskIntoConstraints = false
         return fButton
     }()
@@ -97,13 +121,20 @@ class XylophoneButtons: UIView {
         fButton.heightAnchor.constraint(equalToConstant: 105).isActive = true
     }
     
+    @objc func fButtonA() {
+        let fAction = XylophoneViewController()
+        fAction.fButtonAction()
+    }
+    
     // MARK: - gButton
     
     private lazy var gButton: UIButton = {
-        let gButton = UIButton()
+        let gButton = UIButton(type: .system)
         gButton.backgroundColor = .purple
         gButton.setTitle("G", for: .normal)
+        gButton.titleLabel?.font = .systemFont(ofSize: 40)
         gButton.setTitleColor(.white, for: .normal)
+        gButton.addTarget(self, action: #selector(gButtonA), for: .touchUpInside)
         gButton.translatesAutoresizingMaskIntoConstraints = false
         return gButton
     }()
@@ -115,13 +146,20 @@ class XylophoneButtons: UIView {
         gButton.heightAnchor.constraint(equalToConstant: 105).isActive = true
     }
     
+    @objc func gButtonA() {
+        let gAction = XylophoneViewController()
+        gAction.gButtonAction()
+    }
+    
     // MARK: - aButton
     
     private lazy var aButton: UIButton = {
-        let aButton = UIButton()
+        let aButton = UIButton(type: .system)
         aButton.backgroundColor = .blue
         aButton.setTitle("A", for: .normal)
+        aButton.titleLabel?.font = .systemFont(ofSize: 40)
         aButton.setTitleColor(.white, for: .normal)
+        aButton.addTarget(self, action: #selector(aButtonA), for: .touchUpInside)
         aButton.translatesAutoresizingMaskIntoConstraints = false
         return aButton
     }()
@@ -133,14 +171,20 @@ class XylophoneButtons: UIView {
         aButton.heightAnchor.constraint(equalToConstant: 105).isActive = true
     }
     
+    @objc func aButtonA() {
+        let aAction = XylophoneViewController()
+        aAction.aButtonAction()
+    }
     
     // MARK: - bButton
     
     private lazy var bButton: UIButton = {
-        let bButton = UIButton()
+        let bButton = UIButton(type: .system)
         bButton.backgroundColor = .magenta
         bButton.setTitle("B", for: .normal)
+        bButton.titleLabel?.font = .systemFont(ofSize: 40)
         bButton.setTitleColor(.white, for: .normal)
+        bButton.addTarget(self, action: #selector(bButtonA), for: .touchUpInside)
         bButton.translatesAutoresizingMaskIntoConstraints = false
         return bButton
     }()
@@ -150,6 +194,11 @@ class XylophoneButtons: UIView {
         bButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 35).isActive = true
         bButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -35).isActive = true
         bButton.heightAnchor.constraint(equalToConstant: 105).isActive = true
+    }
+    
+    @objc func bButtonA() {
+        let bAction = XylophoneViewController()
+        bAction.bButtonAction()
     }
     
     override init(frame: CGRect) {
