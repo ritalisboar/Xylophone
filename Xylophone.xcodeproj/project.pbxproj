@@ -12,6 +12,7 @@
 		7E79AE1128331B4700243732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E79AE1028331B4700243732 /* ViewController.swift */; };
 		7E79AE1628331B4800243732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E79AE1528331B4800243732 /* Assets.xcassets */; };
 		7E79AE1928331B4800243732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E79AE1728331B4800243732 /* LaunchScreen.storyboard */; };
+		7E79AE2128331E8D00243732 /* XylophoneButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E79AE2028331E8D00243732 /* XylophoneButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7E79AE1528331B4800243732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E79AE1828331B4800243732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E79AE1A28331B4800243732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E79AE2028331E8D00243732 /* XylophoneButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylophoneButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				7E79AE0C28331B4700243732 /* AppDelegate.swift */,
 				7E79AE0E28331B4700243732 /* SceneDelegate.swift */,
 				7E79AE1028331B4700243732 /* ViewController.swift */,
+				7E79AE2028331E8D00243732 /* XylophoneButtons.swift */,
 				7E79AE1528331B4800243732 /* Assets.xcassets */,
 				7E79AE1728331B4800243732 /* LaunchScreen.storyboard */,
 				7E79AE1A28331B4800243732 /* Info.plist */,
@@ -136,6 +139,7 @@
 			files = (
 				7E79AE1128331B4700243732 /* ViewController.swift in Sources */,
 				7E79AE0D28331B4700243732 /* AppDelegate.swift in Sources */,
+				7E79AE2128331E8D00243732 /* XylophoneButtons.swift in Sources */,
 				7E79AE0F28331B4700243732 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

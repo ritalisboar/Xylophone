@@ -9,11 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var customView: XylophoneButtons? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        buildXylophone()
     }
 
+    private func buildXylophone() {
+        view = XylophoneButtons()
+        customView = view as? XylophoneButtons
+    }
 
 }
 
