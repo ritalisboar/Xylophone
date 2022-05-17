@@ -71,10 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				7E79AE1728331B4800243732 /* LaunchScreen.storyboard */,
-				7E79AE0C28331B4700243732 /* AppDelegate.swift */,
-				7E79AE0E28331B4700243732 /* SceneDelegate.swift */,
-				7E79AE1028331B4700243732 /* XylophoneViewController.swift */,
-				7E79AE2028331E8D00243732 /* XylophoneButtons.swift */,
+				7E79AE31283454FA00243732 /* ViewController */,
+				7E79AE322834550D00243732 /* Delegates */,
 				7E79AE222834285400243732 /* Sounds */,
 				7E79AE1528331B4800243732 /* Assets.xcassets */,
 				7E79AE1A28331B4800243732 /* Info.plist */,
@@ -94,6 +92,24 @@
 				7E79AE282834287D00243732 /* G.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		7E79AE31283454FA00243732 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E79AE2028331E8D00243732 /* XylophoneButtons.swift */,
+				7E79AE1028331B4700243732 /* XylophoneViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7E79AE322834550D00243732 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7E79AE0C28331B4700243732 /* AppDelegate.swift */,
+				7E79AE0E28331B4700243732 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
